@@ -30,13 +30,13 @@ class EstiProstKotlin : AppCompatActivity() {
         verificare.setOnClickListener{
             when (nivelProstie) {
                 1 -> {
-                    Toast.makeText(this, "Ești prost", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, R.string.esti_prost, Toast.LENGTH_SHORT).show()
                 }
                 0 -> {
-                    Toast.makeText(this, "Tot prost ești să mor", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, R.string.tot_prost_esti, Toast.LENGTH_SHORT).show()
                 }
                 else -> {
-                    Toast.makeText(this, "Selecteză ceva, prostule", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, R.string.selecteaza_ceva, Toast.LENGTH_SHORT).show()
                 }
             }
         }
